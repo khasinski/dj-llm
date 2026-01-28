@@ -99,6 +99,6 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Django >= 4.2
 - httpx >= 0.25.0
 
-[Unreleased]: https://github.com/khasinski/django-llm/compare/v1.0.0...HEAD
-[1.0.0]: https://github.com/khasinski/django-llm/compare/v0.1.0...v1.0.0
-[0.1.0]: https://github.com/khasinski/django-llm/releases/tag/v0.1.0
+[Unreleased]: https://github.com/khasinski/dj-llm/compare/v1.0.0...HEAD
+[1.0.0]: https://github.com/khasinski/dj-llm/compare/v0.1.0...v1.0.0
+[0.1.0]: https://github.com/khasinski/dj-llm/releases/tag/v0.1.0

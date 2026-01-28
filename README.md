@@ -1,4 +1,4 @@
-# Django LLM
+# dj-llm
 
 A beautiful unified LLM interface for Django. One API for OpenAI, Anthropic, Google, Azure OpenAI, and Ollama with persistence, streaming, and production-ready features.
 
@@ -22,7 +22,7 @@ Inspired by [RubyLLM](https://github.com/crmne/ruby_llm).
 ## Installation
 
 ```bash
-pip install django-llm
+pip install dj-llm
 ```
 
 Add to your `INSTALLED_APPS`:
