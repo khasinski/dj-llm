@@ -1,0 +1,197 @@
+interactions:
+- request:
+    body: '{"model":"gpt-4o-mini","messages":[{"role":"user","content":"What''s the
+      weather in San Francisco?"}],"stream":false,"tools":[{"type":"function","function":{"name":"get_weather","description":"Get
+      the current weather for a location","parameters":{"type":"object","properties":{"location":{"type":"string"}},"required":["location"]}}}]}'
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '334'
+      Content-Type:
+      - application/json
+      Host:
+      - api.openai.com
+      User-Agent:
+      - python-httpx/0.28.1
+    method: POST
+    uri: https://api.openai.com/v1/chat/completions
+  response:
+    body:
+      string: "{\n  \"id\": \"chatcmpl-D0eHtmFNVgEzD9dfsbE46IaXAKBHk\",\n  \"object\":
+        \"chat.completion\",\n  \"created\": 1769047237,\n  \"model\": \"gpt-4o-mini-2024-07-18\",\n
+        \ \"choices\": [\n    {\n      \"index\": 0,\n      \"message\": {\n        \"role\":
+        \"assistant\",\n        \"content\": null,\n        \"tool_calls\": [\n          {\n
+        \           \"id\": \"call_Z2hFXPaxli5AsZui9SBdafeB\",\n            \"type\":
+        \"function\",\n            \"function\": {\n              \"name\": \"get_weather\",\n
+        \             \"arguments\": \"{\\\"location\\\":\\\"San Francisco\\\"}\"\n
+        \           }\n          }\n        ],\n        \"refusal\": null,\n        \"annotations\":
+        []\n      },\n      \"logprobs\": null,\n      \"finish_reason\": \"tool_calls\"\n
+        \   }\n  ],\n  \"usage\": {\n    \"prompt_tokens\": 52,\n    \"completion_tokens\":
+        15,\n    \"total_tokens\": 67,\n    \"prompt_tokens_details\": {\n      \"cached_tokens\":
+        0,\n      \"audio_tokens\": 0\n    },\n    \"completion_tokens_details\":
+        {\n      \"reasoning_tokens\": 0,\n      \"audio_tokens\": 0,\n      \"accepted_prediction_tokens\":
+        0,\n      \"rejected_prediction_tokens\": 0\n    }\n  },\n  \"service_tier\":
+        \"default\",\n  \"system_fingerprint\": \"fp_29330a9688\"\n}\n"
+    headers:
+      CF-RAY:
+      - 9c1b75714da2bf28-WAW
+      Connection:
+      - keep-alive
+      Content-Type:
+      - application/json
+      Date:
+      - Thu, 22 Jan 2026 02:00:38 GMT
+      Server:
+      - cloudflare
+      Set-Cookie:
+      - __cf_bm=y5FnZ1UYcAJAqjsGw4kqwWV89Qg1kENRMtbZD3yWrEQ-1769047238-1.0.1.1-0RMF4UEFgKxWokPbXqVS6eeSdhEARNJOzjpRXNxM1nTg9xsIWDDoc8fD1sDF2gEXM1rFTeppVgIQD42c.v0xvg2W18bws8aQHYVbm9rqxC8;
+        path=/; expires=Thu, 22-Jan-26 02:30:38 GMT; domain=.api.openai.com; HttpOnly;
+        Secure; SameSite=None
+      - _cfuvid=lLdGevnedQdpBAB6Aml0QnP1lbC_NT2NBqM3KD.0Ksw-1769047238143-0.0.1.1-604800000;
+        path=/; domain=.api.openai.com; HttpOnly; Secure; SameSite=None
+      Strict-Transport-Security:
+      - max-age=31536000; includeSubDomains; preload
+      Transfer-Encoding:
+      - chunked
+      X-Content-Type-Options:
+      - nosniff
+      access-control-expose-headers:
+      - X-Request-ID
+      alt-svc:
+      - h3=":443"; ma=86400
+      cf-cache-status:
+      - DYNAMIC
+      content-length:
+      - '1096'
+      openai-organization:
+      - user-h7m2t30jnyqzec1thkvt5rcd
+      openai-processing-ms:
+      - '669'
+      openai-project:
+      - proj_yBBvayevSgRR3SVjSmBgm0so
+      openai-version:
+      - '2020-10-01'
+      x-envoy-upstream-service-time:
+      - '690'
+      x-openai-proxy-wasm:
+      - v0.1
+      x-ratelimit-limit-requests:
+      - '5000'
+      x-ratelimit-limit-tokens:
+      - '4000000'
+      x-ratelimit-remaining-requests:
+      - '4999'
+      x-ratelimit-remaining-tokens:
+      - '3999989'
+      x-ratelimit-reset-requests:
+      - 12ms
+      x-ratelimit-reset-tokens:
+      - 0s
+      x-request-id:
+      - req_c61dd9b888f441eb970309096fdd1fe8
+    status:
+      code: 200
+      message: OK
+- request:
+    body: "{\"model\":\"gpt-4o-mini\",\"messages\":[{\"role\":\"user\",\"content\":\"What's
+      the weather in San Francisco?\"},{\"role\":\"assistant\",\"content\":\"\",\"tool_calls\":[{\"id\":\"call_Z2hFXPaxli5AsZui9SBdafeB\",\"type\":\"function\",\"function\":{\"name\":\"get_weather\",\"arguments\":\"{\\\"location\\\":
+      \\\"San Francisco\\\"}\"}}]},{\"role\":\"tool\",\"content\":\"The weather in
+      San Francisco is sunny with a temperature of 72\xB0F\",\"tool_call_id\":\"call_Z2hFXPaxli5AsZui9SBdafeB\"}],\"stream\":false,\"tools\":[{\"type\":\"function\",\"function\":{\"name\":\"get_weather\",\"description\":\"Get
+      the current weather for a location\",\"parameters\":{\"type\":\"object\",\"properties\":{\"location\":{\"type\":\"string\"}},\"required\":[\"location\"]}}}]}"
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '663'
+      Content-Type:
+      - application/json
+      Host:
+      - api.openai.com
+      User-Agent:
+      - python-httpx/0.28.1
+    method: POST
+    uri: https://api.openai.com/v1/chat/completions
+  response:
+    body:
+      string: "{\n  \"id\": \"chatcmpl-D0eHvnUTuLKCTJYzr0bdogAou1sZK\",\n  \"object\":
+        \"chat.completion\",\n  \"created\": 1769047239,\n  \"model\": \"gpt-4o-mini-2024-07-18\",\n
+        \ \"choices\": [\n    {\n      \"index\": 0,\n      \"message\": {\n        \"role\":
+        \"assistant\",\n        \"content\": \"The weather in San Francisco is sunny
+        with a temperature of 72\xB0F.\",\n        \"refusal\": null,\n        \"annotations\":
+        []\n      },\n      \"logprobs\": null,\n      \"finish_reason\": \"stop\"\n
+        \   }\n  ],\n  \"usage\": {\n    \"prompt_tokens\": 89,\n    \"completion_tokens\":
+        16,\n    \"total_tokens\": 105,\n    \"prompt_tokens_details\": {\n      \"cached_tokens\":
+        0,\n      \"audio_tokens\": 0\n    },\n    \"completion_tokens_details\":
+        {\n      \"reasoning_tokens\": 0,\n      \"audio_tokens\": 0,\n      \"accepted_prediction_tokens\":
+        0,\n      \"rejected_prediction_tokens\": 0\n    }\n  },\n  \"service_tier\":
+        \"default\",\n  \"system_fingerprint\": \"fp_29330a9688\"\n}\n"
+    headers:
+      CF-RAY:
+      - 9c1b7576ac4cbf7e-WAW
+      Connection:
+      - keep-alive
+      Content-Type:
+      - application/json
+      Date:
+      - Thu, 22 Jan 2026 02:00:39 GMT
+      Server:
+      - cloudflare
+      Set-Cookie:
+      - __cf_bm=2rilbRtu5ZpgDdsyFTQiPrS29PJUNZZiwj9lilU4x2E-1769047239-1.0.1.1-TTHXHxg89_IVSNx2uTDKPex9_OGon6TS2402KK24WWRIamqmmJ8ItmVBz_kLQDouLsB9NABLTWY4RUL3ZORSvWhj6CiLA9z9nQpN.peMJWs;
+        path=/; expires=Thu, 22-Jan-26 02:30:39 GMT; domain=.api.openai.com; HttpOnly;
+        Secure; SameSite=None
+      - _cfuvid=JK5_IUV31bIwkBFVefKPFQ20hZ0ocIpivCj3c_Fpv.o-1769047239670-0.0.1.1-604800000;
+        path=/; domain=.api.openai.com; HttpOnly; Secure; SameSite=None
+      Strict-Transport-Security:
+      - max-age=31536000; includeSubDomains; preload
+      Transfer-Encoding:
+      - chunked
+      X-Content-Type-Options:
+      - nosniff
+      access-control-expose-headers:
+      - X-Request-ID
+      alt-svc:
+      - h3=":443"; ma=86400
+      cf-cache-status:
+      - DYNAMIC
+      content-length:
+      - '874'
+      openai-organization:
+      - user-h7m2t30jnyqzec1thkvt5rcd
+      openai-processing-ms:
+      - '491'
+      openai-project:
+      - proj_yBBvayevSgRR3SVjSmBgm0so
+      openai-version:
+      - '2020-10-01'
+      x-envoy-upstream-service-time:
+      - '796'
+      x-openai-proxy-wasm:
+      - v0.1
+      x-ratelimit-limit-requests:
+      - '5000'
+      x-ratelimit-limit-tokens:
+      - '4000000'
+      x-ratelimit-remaining-requests:
+      - '4999'
+      x-ratelimit-remaining-tokens:
+      - '3999970'
+      x-ratelimit-reset-requests:
+      - 12ms
+      x-ratelimit-reset-tokens:
+      - 0s
+      x-request-id:
+      - req_5841f652ee314a4a93c6d7ecd31fb687
+    status:
+      code: 200
+      message: OK
+version: 1

@@ -1,0 +1,96 @@
+interactions:
+- request:
+    body: '{"model":"gpt-4o-mini","messages":[{"role":"user","content":"Extract: Jane
+      Doe is a 28 year old data scientist."}],"stream":false,"response_format":{"type":"json_schema","json_schema":{"name":"response","strict":true,"schema":{"type":"object","properties":{"name":{"type":"string"},"age":{"type":"integer"},"occupation":{"type":"string"}},"required":["name","age","occupation"],"additionalProperties":false}}}}'
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '410'
+      Content-Type:
+      - application/json
+      Host:
+      - api.openai.com
+      User-Agent:
+      - python-httpx/0.28.1
+    method: POST
+    uri: https://api.openai.com/v1/chat/completions
+  response:
+    body:
+      string: "{\n  \"id\": \"chatcmpl-D0mu3rvo1vsK2ml41btQyoeyOOe9B\",\n  \"object\":
+        \"chat.completion\",\n  \"created\": 1769080355,\n  \"model\": \"gpt-4o-mini-2024-07-18\",\n
+        \ \"choices\": [\n    {\n      \"index\": 0,\n      \"message\": {\n        \"role\":
+        \"assistant\",\n        \"content\": \"{\\\"name\\\":\\\"Jane Doe\\\",\\\"age\\\":28,\\\"occupation\\\":\\\"data
+        scientist\\\"}\",\n        \"refusal\": null,\n        \"annotations\": []\n
+        \     },\n      \"logprobs\": null,\n      \"finish_reason\": \"stop\"\n    }\n
+        \ ],\n  \"usage\": {\n    \"prompt_tokens\": 62,\n    \"completion_tokens\":
+        15,\n    \"total_tokens\": 77,\n    \"prompt_tokens_details\": {\n      \"cached_tokens\":
+        0,\n      \"audio_tokens\": 0\n    },\n    \"completion_tokens_details\":
+        {\n      \"reasoning_tokens\": 0,\n      \"audio_tokens\": 0,\n      \"accepted_prediction_tokens\":
+        0,\n      \"rejected_prediction_tokens\": 0\n    }\n  },\n  \"service_tier\":
+        \"default\",\n  \"system_fingerprint\": \"fp_c4585b5b9c\"\n}\n"
+    headers:
+      CF-RAY:
+      - 9c1e9dfa4a26eed5-WAW
+      Connection:
+      - keep-alive
+      Content-Type:
+      - application/json
+      Date:
+      - Thu, 22 Jan 2026 11:12:36 GMT
+      Server:
+      - cloudflare
+      Set-Cookie:
+      - __cf_bm=rWrufvfjZIshm_e379VDAqR80iWjkIR7K9YUfcuh8wE-1769080356-1.0.1.1-P2FRUBMLkpJuj_p7p64MlNMLYakND3fLiFd6aLlcN7FkbintqiBzMYLgzlZ_tdAPE5Rm_ML0t.Ropu1XDnT60dYvGeoXw3kg7KnNTzB6mqo;
+        path=/; expires=Thu, 22-Jan-26 11:42:36 GMT; domain=.api.openai.com; HttpOnly;
+        Secure; SameSite=None
+      - _cfuvid=UhSUKRU3ZXOxQiZGnGdOhG9QfgRlCgk.hIPRM1olKOc-1769080356490-0.0.1.1-604800000;
+        path=/; domain=.api.openai.com; HttpOnly; Secure; SameSite=None
+      Strict-Transport-Security:
+      - max-age=31536000; includeSubDomains; preload
+      Transfer-Encoding:
+      - chunked
+      X-Content-Type-Options:
+      - nosniff
+      access-control-expose-headers:
+      - X-Request-ID
+      alt-svc:
+      - h3=":443"; ma=86400
+      cf-cache-status:
+      - DYNAMIC
+      content-length:
+      - '875'
+      openai-organization:
+      - user-h7m2t30jnyqzec1thkvt5rcd
+      openai-processing-ms:
+      - '623'
+      openai-project:
+      - proj_yBBvayevSgRR3SVjSmBgm0so
+      openai-version:
+      - '2020-10-01'
+      x-envoy-upstream-service-time:
+      - '859'
+      x-openai-proxy-wasm:
+      - v0.1
+      x-ratelimit-limit-requests:
+      - '5000'
+      x-ratelimit-limit-tokens:
+      - '4000000'
+      x-ratelimit-remaining-requests:
+      - '4999'
+      x-ratelimit-remaining-tokens:
+      - '3999985'
+      x-ratelimit-reset-requests:
+      - 12ms
+      x-ratelimit-reset-tokens:
+      - 0s
+      x-request-id:
+      - req_1a46b3df637a48298f5202733156a326
+    status:
+      code: 200
+      message: OK
+version: 1

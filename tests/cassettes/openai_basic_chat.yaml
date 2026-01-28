@@ -1,0 +1,95 @@
+interactions:
+- request:
+    body: '{"model":"gpt-4o-mini","messages":[{"role":"user","content":"Say ''Hello,
+      World!'' and nothing else."}],"stream":false}'
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '117'
+      Content-Type:
+      - application/json
+      Host:
+      - api.openai.com
+      User-Agent:
+      - python-httpx/0.28.1
+    method: POST
+    uri: https://api.openai.com/v1/chat/completions
+  response:
+    body:
+      string: "{\n  \"id\": \"chatcmpl-D0eHoufjHnecFr5Br0gPYiIN9TiBu\",\n  \"object\":
+        \"chat.completion\",\n  \"created\": 1769047232,\n  \"model\": \"gpt-4o-mini-2024-07-18\",\n
+        \ \"choices\": [\n    {\n      \"index\": 0,\n      \"message\": {\n        \"role\":
+        \"assistant\",\n        \"content\": \"Hello, World!\",\n        \"refusal\":
+        null,\n        \"annotations\": []\n      },\n      \"logprobs\": null,\n
+        \     \"finish_reason\": \"stop\"\n    }\n  ],\n  \"usage\": {\n    \"prompt_tokens\":
+        17,\n    \"completion_tokens\": 4,\n    \"total_tokens\": 21,\n    \"prompt_tokens_details\":
+        {\n      \"cached_tokens\": 0,\n      \"audio_tokens\": 0\n    },\n    \"completion_tokens_details\":
+        {\n      \"reasoning_tokens\": 0,\n      \"audio_tokens\": 0,\n      \"accepted_prediction_tokens\":
+        0,\n      \"rejected_prediction_tokens\": 0\n    }\n  },\n  \"service_tier\":
+        \"default\",\n  \"system_fingerprint\": \"fp_c4585b5b9c\"\n}\n"
+    headers:
+      CF-RAY:
+      - 9c1b754edf06f7b2-WAW
+      Connection:
+      - keep-alive
+      Content-Type:
+      - application/json
+      Date:
+      - Thu, 22 Jan 2026 02:00:33 GMT
+      Server:
+      - cloudflare
+      Set-Cookie:
+      - __cf_bm=wEFcjEJ7lHrsJhLL7X8sY9Rko9pT_YikJSwtGll03oU-1769047233-1.0.1.1-zpcKozXZQC3HM25OeZgr.nvPl8JI61WeBQ8iENFwr.d.Td2mG.Q9MprKYYMxLTRw1TYZ9aPBXC6vzYQjsjGynXxfD1P8dwVbsNRoeMUAyZ4;
+        path=/; expires=Thu, 22-Jan-26 02:30:33 GMT; domain=.api.openai.com; HttpOnly;
+        Secure; SameSite=None
+      - _cfuvid=3qRT.MJYyasq.JfHYop3D79Qu.Wv30uoJx.WTiOUko0-1769047233120-0.0.1.1-604800000;
+        path=/; domain=.api.openai.com; HttpOnly; Secure; SameSite=None
+      Strict-Transport-Security:
+      - max-age=31536000; includeSubDomains; preload
+      Transfer-Encoding:
+      - chunked
+      X-Content-Type-Options:
+      - nosniff
+      access-control-expose-headers:
+      - X-Request-ID
+      alt-svc:
+      - h3=":443"; ma=86400
+      cf-cache-status:
+      - DYNAMIC
+      content-length:
+      - '819'
+      openai-organization:
+      - user-h7m2t30jnyqzec1thkvt5rcd
+      openai-processing-ms:
+      - '270'
+      openai-project:
+      - proj_yBBvayevSgRR3SVjSmBgm0so
+      openai-version:
+      - '2020-10-01'
+      x-envoy-upstream-service-time:
+      - '546'
+      x-openai-proxy-wasm:
+      - v0.1
+      x-ratelimit-limit-requests:
+      - '5000'
+      x-ratelimit-limit-tokens:
+      - '4000000'
+      x-ratelimit-remaining-requests:
+      - '4999'
+      x-ratelimit-remaining-tokens:
+      - '3999988'
+      x-ratelimit-reset-requests:
+      - 12ms
+      x-ratelimit-reset-tokens:
+      - 0s
+      x-request-id:
+      - req_538eb3055b9e492386ddd2aeb7a86297
+    status:
+      code: 200
+      message: OK
+version: 1

@@ -1,0 +1,169 @@
+interactions:
+- request:
+    body: '{"model":"claude-sonnet-4-20250514","messages":[{"role":"user","content":"What''s
+      the weather in San Francisco?"}],"max_tokens":4096,"stream":false,"tools":[{"name":"get_weather","description":"Get
+      the current weather for a location","input_schema":{"type":"object","properties":{"location":{"type":"string"}},"required":["location"]}}]}'
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '336'
+      Content-Type:
+      - application/json
+      Host:
+      - api.anthropic.com
+      User-Agent:
+      - python-httpx/0.28.1
+      anthropic-version:
+      - '2023-06-01'
+    method: POST
+    uri: https://api.anthropic.com/v1/messages
+  response:
+    body:
+      string: '{"model":"claude-sonnet-4-20250514","id":"msg_017GhYgPWbKLjzWriXYDWmDA","type":"message","role":"assistant","content":[{"type":"text","text":"I''ll
+        check the current weather in San Francisco for you."},{"type":"tool_use","id":"toolu_01MVT21ErBt7PyA9k55enerN","name":"get_weather","input":{"location":"San
+        Francisco"}}],"stop_reason":"tool_use","stop_sequence":null,"usage":{"input_tokens":383,"cache_creation_input_tokens":0,"cache_read_input_tokens":0,"cache_creation":{"ephemeral_5m_input_tokens":0,"ephemeral_1h_input_tokens":0},"output_tokens":67,"service_tier":"standard"}}'
+    headers:
+      CF-RAY:
+      - 9c1b75bc5a85a383-WAW
+      Connection:
+      - keep-alive
+      Content-Type:
+      - application/json
+      Date:
+      - Thu, 22 Jan 2026 02:00:51 GMT
+      Server:
+      - cloudflare
+      Transfer-Encoding:
+      - chunked
+      X-Robots-Tag:
+      - none
+      anthropic-organization-id:
+      - 27eeba7e-b1ca-4526-ac12-3141fd224476
+      anthropic-ratelimit-input-tokens-limit:
+      - '30000'
+      anthropic-ratelimit-input-tokens-remaining:
+      - '30000'
+      anthropic-ratelimit-input-tokens-reset:
+      - '2026-01-22T02:00:51Z'
+      anthropic-ratelimit-output-tokens-limit:
+      - '8000'
+      anthropic-ratelimit-output-tokens-remaining:
+      - '8000'
+      anthropic-ratelimit-output-tokens-reset:
+      - '2026-01-22T02:00:51Z'
+      anthropic-ratelimit-requests-limit:
+      - '50'
+      anthropic-ratelimit-requests-remaining:
+      - '49'
+      anthropic-ratelimit-requests-reset:
+      - '2026-01-22T02:00:50Z'
+      anthropic-ratelimit-tokens-limit:
+      - '38000'
+      anthropic-ratelimit-tokens-remaining:
+      - '38000'
+      anthropic-ratelimit-tokens-reset:
+      - '2026-01-22T02:00:51Z'
+      cf-cache-status:
+      - DYNAMIC
+      content-length:
+      - '577'
+      request-id:
+      - req_011CXMbFm1SRerNNENPVPAFd
+      strict-transport-security:
+      - max-age=31536000; includeSubDomains; preload
+      x-envoy-upstream-service-time:
+      - '1957'
+    status:
+      code: 200
+      message: OK
+- request:
+    body: "{\"model\":\"claude-sonnet-4-20250514\",\"messages\":[{\"role\":\"user\",\"content\":\"What's
+      the weather in San Francisco?\"},{\"role\":\"assistant\",\"content\":[{\"type\":\"text\",\"text\":\"I'll
+      check the current weather in San Francisco for you.\"},{\"type\":\"tool_use\",\"id\":\"toolu_01MVT21ErBt7PyA9k55enerN\",\"name\":\"get_weather\",\"input\":{\"location\":\"San
+      Francisco\"}}]},{\"role\":\"user\",\"content\":[{\"type\":\"tool_result\",\"tool_use_id\":\"toolu_01MVT21ErBt7PyA9k55enerN\",\"content\":\"The
+      weather in San Francisco is sunny with a temperature of 72\xB0F\"}]}],\"max_tokens\":4096,\"stream\":false,\"tools\":[{\"name\":\"get_weather\",\"description\":\"Get
+      the current weather for a location\",\"input_schema\":{\"type\":\"object\",\"properties\":{\"location\":{\"type\":\"string\"}},\"required\":[\"location\"]}}]}"
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '743'
+      Content-Type:
+      - application/json
+      Host:
+      - api.anthropic.com
+      User-Agent:
+      - python-httpx/0.28.1
+      anthropic-version:
+      - '2023-06-01'
+    method: POST
+    uri: https://api.anthropic.com/v1/messages
+  response:
+    body:
+      string: "{\"model\":\"claude-sonnet-4-20250514\",\"id\":\"msg_01QwCb9ABhyWCvatXAnnSXQJ\",\"type\":\"message\",\"role\":\"assistant\",\"content\":[{\"type\":\"text\",\"text\":\"The
+        current weather in San Francisco is sunny with a temperature of 72\xB0F. It's
+        a beautiful day there!\"}],\"stop_reason\":\"end_turn\",\"stop_sequence\":null,\"usage\":{\"input_tokens\":477,\"cache_creation_input_tokens\":0,\"cache_read_input_tokens\":0,\"cache_creation\":{\"ephemeral_5m_input_tokens\":0,\"ephemeral_1h_input_tokens\":0},\"output_tokens\":27,\"service_tier\":\"standard\"}}"
+    headers:
+      CF-RAY:
+      - 9c1b75c98d26b2ae-WAW
+      Connection:
+      - keep-alive
+      Content-Type:
+      - application/json
+      Date:
+      - Thu, 22 Jan 2026 02:00:53 GMT
+      Server:
+      - cloudflare
+      Transfer-Encoding:
+      - chunked
+      X-Robots-Tag:
+      - none
+      anthropic-organization-id:
+      - 27eeba7e-b1ca-4526-ac12-3141fd224476
+      anthropic-ratelimit-input-tokens-limit:
+      - '30000'
+      anthropic-ratelimit-input-tokens-remaining:
+      - '30000'
+      anthropic-ratelimit-input-tokens-reset:
+      - '2026-01-22T02:00:53Z'
+      anthropic-ratelimit-output-tokens-limit:
+      - '8000'
+      anthropic-ratelimit-output-tokens-remaining:
+      - '8000'
+      anthropic-ratelimit-output-tokens-reset:
+      - '2026-01-22T02:00:54Z'
+      anthropic-ratelimit-requests-limit:
+      - '50'
+      anthropic-ratelimit-requests-remaining:
+      - '49'
+      anthropic-ratelimit-requests-reset:
+      - '2026-01-22T02:00:52Z'
+      anthropic-ratelimit-tokens-limit:
+      - '38000'
+      anthropic-ratelimit-tokens-remaining:
+      - '38000'
+      anthropic-ratelimit-tokens-reset:
+      - '2026-01-22T02:00:53Z'
+      cf-cache-status:
+      - DYNAMIC
+      content-length:
+      - '507'
+      request-id:
+      - req_011CXMbFv2AuZGPgJrCCs9wp
+      strict-transport-security:
+      - max-age=31536000; includeSubDomains; preload
+      x-envoy-upstream-service-time:
+      - '2410'
+    status:
+      code: 200
+      message: OK
+version: 1

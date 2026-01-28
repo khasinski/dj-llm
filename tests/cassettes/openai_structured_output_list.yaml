@@ -1,0 +1,95 @@
+interactions:
+- request:
+    body: '{"model":"gpt-4o-mini","messages":[{"role":"user","content":"List 3 programming
+      languages: Python, JavaScript, Rust"}],"stream":false,"response_format":{"type":"json_schema","json_schema":{"name":"response","strict":true,"schema":{"type":"object","properties":{"items":{"type":"array","items":{"type":"string"}}},"required":["items"],"additionalProperties":false}}}}'
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '366'
+      Content-Type:
+      - application/json
+      Host:
+      - api.openai.com
+      User-Agent:
+      - python-httpx/0.28.1
+    method: POST
+    uri: https://api.openai.com/v1/chat/completions
+  response:
+    body:
+      string: "{\n  \"id\": \"chatcmpl-D0mu4r4RS4zuH3EAM1VfoDQzg7uWg\",\n  \"object\":
+        \"chat.completion\",\n  \"created\": 1769080356,\n  \"model\": \"gpt-4o-mini-2024-07-18\",\n
+        \ \"choices\": [\n    {\n      \"index\": 0,\n      \"message\": {\n        \"role\":
+        \"assistant\",\n        \"content\": \"{\\\"items\\\":[\\\"Python\\\",\\\"JavaScript\\\",\\\"Rust\\\"]}\",\n
+        \       \"refusal\": null,\n        \"annotations\": []\n      },\n      \"logprobs\":
+        null,\n      \"finish_reason\": \"stop\"\n    }\n  ],\n  \"usage\": {\n    \"prompt_tokens\":
+        53,\n    \"completion_tokens\": 11,\n    \"total_tokens\": 64,\n    \"prompt_tokens_details\":
+        {\n      \"cached_tokens\": 0,\n      \"audio_tokens\": 0\n    },\n    \"completion_tokens_details\":
+        {\n      \"reasoning_tokens\": 0,\n      \"audio_tokens\": 0,\n      \"accepted_prediction_tokens\":
+        0,\n      \"rejected_prediction_tokens\": 0\n    }\n  },\n  \"service_tier\":
+        \"default\",\n  \"system_fingerprint\": \"fp_c4585b5b9c\"\n}\n"
+    headers:
+      CF-RAY:
+      - 9c1e9e04590d14f3-WAW
+      Connection:
+      - keep-alive
+      Content-Type:
+      - application/json
+      Date:
+      - Thu, 22 Jan 2026 11:12:37 GMT
+      Server:
+      - cloudflare
+      Set-Cookie:
+      - __cf_bm=hMKyFa.0unfmEZ6eVsa5QMN0yJikD3mb5Tthmxfhb5I-1769080357-1.0.1.1-OQIidWDB7fxt.uKNFonrLT8PavJOvR2hlgDeh6fKOhN1lWHBzZr2RhxevBmISpHOGsDHrgrk1wZaZwKf2JNg_K.0zk5BuJOkNByYe.0Noiw;
+        path=/; expires=Thu, 22-Jan-26 11:42:37 GMT; domain=.api.openai.com; HttpOnly;
+        Secure; SameSite=None
+      - _cfuvid=Tzk7uV16to8JzZcutXUk7nON_ezgTDYHVE_qoQ6dw6g-1769080357037-0.0.1.1-604800000;
+        path=/; domain=.api.openai.com; HttpOnly; Secure; SameSite=None
+      Strict-Transport-Security:
+      - max-age=31536000; includeSubDomains; preload
+      Transfer-Encoding:
+      - chunked
+      X-Content-Type-Options:
+      - nosniff
+      access-control-expose-headers:
+      - X-Request-ID
+      alt-svc:
+      - h3=":443"; ma=86400
+      cf-cache-status:
+      - DYNAMIC
+      content-length:
+      - '855'
+      openai-organization:
+      - user-h7m2t30jnyqzec1thkvt5rcd
+      openai-processing-ms:
+      - '339'
+      openai-project:
+      - proj_yBBvayevSgRR3SVjSmBgm0so
+      openai-version:
+      - '2020-10-01'
+      x-envoy-upstream-service-time:
+      - '355'
+      x-openai-proxy-wasm:
+      - v0.1
+      x-ratelimit-limit-requests:
+      - '5000'
+      x-ratelimit-limit-tokens:
+      - '4000000'
+      x-ratelimit-remaining-requests:
+      - '4999'
+      x-ratelimit-remaining-tokens:
+      - '3999984'
+      x-ratelimit-reset-requests:
+      - 12ms
+      x-ratelimit-reset-tokens:
+      - 0s
+      x-request-id:
+      - req_ececa89748aa4792b6c8ae829c43ad2d
+    status:
+      code: 200
+      message: OK
+version: 1

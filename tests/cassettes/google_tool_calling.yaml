@@ -1,0 +1,127 @@
+interactions:
+- request:
+    body: '{"contents":[{"role":"user","parts":[{"text":"What''s the weather in San
+      Francisco?"}]}],"tools":[{"functionDeclarations":[{"name":"get_weather","description":"Get
+      the current weather for a location","parameters":{"type":"object","properties":{"location":{"type":"string"}},"required":["location"]}}]}]}'
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '302'
+      Content-Type:
+      - application/json
+      Host:
+      - generativelanguage.googleapis.com
+      User-Agent:
+      - python-httpx/0.28.1
+    method: POST
+    uri: https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash:generateContent
+  response:
+    body:
+      string: "{\n  \"candidates\": [\n    {\n      \"content\": {\n        \"parts\":
+        [\n          {\n            \"functionCall\": {\n              \"name\": \"get_weather\",\n
+        \             \"args\": {\n                \"location\": \"San Francisco\"\n
+        \             }\n            }\n          }\n        ],\n        \"role\":
+        \"model\"\n      },\n      \"finishReason\": \"STOP\",\n      \"avgLogprobs\":
+        -0.0047316662967205048\n    }\n  ],\n  \"usageMetadata\": {\n    \"promptTokenCount\":
+        23,\n    \"candidatesTokenCount\": 6,\n    \"totalTokenCount\": 29,\n    \"promptTokensDetails\":
+        [\n      {\n        \"modality\": \"TEXT\",\n        \"tokenCount\": 23\n
+        \     }\n    ],\n    \"candidatesTokensDetails\": [\n      {\n        \"modality\":
+        \"TEXT\",\n        \"tokenCount\": 6\n      }\n    ]\n  },\n  \"modelVersion\":
+        \"gemini-2.0-flash\",\n  \"responseId\": \"14RxabSxLP6HxN8Ps7Ps8Q4\"\n}\n"
+    headers:
+      Alt-Svc:
+      - h3=":443"; ma=2592000,h3-29=":443"; ma=2592000
+      Content-Type:
+      - application/json; charset=UTF-8
+      Date:
+      - Thu, 22 Jan 2026 02:00:56 GMT
+      Server:
+      - scaffolding on HTTPServer2
+      Server-Timing:
+      - gfet4t7; dur=625
+      Transfer-Encoding:
+      - chunked
+      Vary:
+      - Origin
+      - X-Origin
+      - Referer
+      X-Content-Type-Options:
+      - nosniff
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-XSS-Protection:
+      - '0'
+      content-length:
+      - '788'
+    status:
+      code: 200
+      message: OK
+- request:
+    body: "{\"contents\":[{\"role\":\"user\",\"parts\":[{\"text\":\"What's the weather
+      in San Francisco?\"}]},{\"role\":\"model\",\"parts\":[{\"functionCall\":{\"name\":\"get_weather\",\"args\":{\"location\":\"San
+      Francisco\"}}}]},{\"role\":\"user\",\"parts\":[{\"functionResponse\":{\"name\":\"get_weather\",\"response\":{\"result\":\"The
+      weather in San Francisco is sunny with a temperature of 72\xB0F\"}}}]}],\"tools\":[{\"functionDeclarations\":[{\"name\":\"get_weather\",\"description\":\"Get
+      the current weather for a location\",\"parameters\":{\"type\":\"object\",\"properties\":{\"location\":{\"type\":\"string\"}},\"required\":[\"location\"]}}]}]}"
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '565'
+      Content-Type:
+      - application/json
+      Host:
+      - generativelanguage.googleapis.com
+      User-Agent:
+      - python-httpx/0.28.1
+    method: POST
+    uri: https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash:generateContent
+  response:
+    body:
+      string: "{\n  \"candidates\": [\n    {\n      \"content\": {\n        \"parts\":
+        [\n          {\n            \"text\": \"The weather in San Francisco is sunny
+        with a temperature of 72\xB0F.\\n\"\n          }\n        ],\n        \"role\":
+        \"model\"\n      },\n      \"finishReason\": \"STOP\",\n      \"avgLogprobs\":
+        -0.0014500804245471954\n    }\n  ],\n  \"usageMetadata\": {\n    \"promptTokenCount\":
+        49,\n    \"candidatesTokenCount\": 18,\n    \"totalTokenCount\": 67,\n    \"promptTokensDetails\":
+        [\n      {\n        \"modality\": \"TEXT\",\n        \"tokenCount\": 49\n
+        \     }\n    ],\n    \"candidatesTokensDetails\": [\n      {\n        \"modality\":
+        \"TEXT\",\n        \"tokenCount\": 18\n      }\n    ]\n  },\n  \"modelVersion\":
+        \"gemini-2.0-flash\",\n  \"responseId\": \"2IRxac6mEo61xN8Pm5-wsQ0\"\n}\n"
+    headers:
+      Alt-Svc:
+      - h3=":443"; ma=2592000,h3-29=":443"; ma=2592000
+      Content-Type:
+      - application/json; charset=UTF-8
+      Date:
+      - Thu, 22 Jan 2026 02:00:56 GMT
+      Server:
+      - scaffolding on HTTPServer2
+      Server-Timing:
+      - gfet4t7; dur=452
+      Transfer-Encoding:
+      - chunked
+      Vary:
+      - Origin
+      - X-Origin
+      - Referer
+      X-Content-Type-Options:
+      - nosniff
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-XSS-Protection:
+      - '0'
+      content-length:
+      - '716'
+    status:
+      code: 200
+      message: OK
+version: 1

@@ -1,0 +1,62 @@
+interactions:
+- request:
+    body: '{"contents":[{"role":"user","parts":[{"text":"What is Python?"}]}],"systemInstruction":{"parts":[{"text":"You
+      always respond in exactly 3 words."}]}}'
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '149'
+      Content-Type:
+      - application/json
+      Host:
+      - generativelanguage.googleapis.com
+      User-Agent:
+      - python-httpx/0.28.1
+    method: POST
+    uri: https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash:generateContent
+  response:
+    body:
+      string: "{\n  \"candidates\": [\n    {\n      \"content\": {\n        \"parts\":
+        [\n          {\n            \"text\": \"Versatile programming language.\\n\"\n
+        \         }\n        ],\n        \"role\": \"model\"\n      },\n      \"finishReason\":
+        \"STOP\",\n      \"avgLogprobs\": -0.33230314652125043\n    }\n  ],\n  \"usageMetadata\":
+        {\n    \"promptTokenCount\": 13,\n    \"candidatesTokenCount\": 6,\n    \"totalTokenCount\":
+        19,\n    \"promptTokensDetails\": [\n      {\n        \"modality\": \"TEXT\",\n
+        \       \"tokenCount\": 13\n      }\n    ],\n    \"candidatesTokensDetails\":
+        [\n      {\n        \"modality\": \"TEXT\",\n        \"tokenCount\": 6\n      }\n
+        \   ]\n  },\n  \"modelVersion\": \"gemini-2.0-flash\",\n  \"responseId\":
+        \"1oRxaf2SI8KevdIP2aq0qAI\"\n}\n"
+    headers:
+      Alt-Svc:
+      - h3=":443"; ma=2592000,h3-29=":443"; ma=2592000
+      Content-Type:
+      - application/json; charset=UTF-8
+      Date:
+      - Thu, 22 Jan 2026 02:00:54 GMT
+      Server:
+      - scaffolding on HTTPServer2
+      Server-Timing:
+      - gfet4t7; dur=462
+      Transfer-Encoding:
+      - chunked
+      Vary:
+      - Origin
+      - X-Origin
+      - Referer
+      X-Content-Type-Options:
+      - nosniff
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-XSS-Protection:
+      - '0'
+      content-length:
+      - '677'
+    status:
+      code: 200
+      message: OK
+version: 1

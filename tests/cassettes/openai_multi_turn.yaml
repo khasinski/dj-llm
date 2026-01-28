@@ -1,0 +1,190 @@
+interactions:
+- request:
+    body: '{"model":"gpt-4o-mini","messages":[{"role":"user","content":"My name is
+      Alice."}],"stream":false}'
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '97'
+      Content-Type:
+      - application/json
+      Host:
+      - api.openai.com
+      User-Agent:
+      - python-httpx/0.28.1
+    method: POST
+    uri: https://api.openai.com/v1/chat/completions
+  response:
+    body:
+      string: "{\n  \"id\": \"chatcmpl-D0eHrAzsP5gg6RWjRdzAnZvEf3yPv\",\n  \"object\":
+        \"chat.completion\",\n  \"created\": 1769047235,\n  \"model\": \"gpt-4o-mini-2024-07-18\",\n
+        \ \"choices\": [\n    {\n      \"index\": 0,\n      \"message\": {\n        \"role\":
+        \"assistant\",\n        \"content\": \"Nice to meet you, Alice! How can I
+        assist you today?\",\n        \"refusal\": null,\n        \"annotations\":
+        []\n      },\n      \"logprobs\": null,\n      \"finish_reason\": \"stop\"\n
+        \   }\n  ],\n  \"usage\": {\n    \"prompt_tokens\": 12,\n    \"completion_tokens\":
+        14,\n    \"total_tokens\": 26,\n    \"prompt_tokens_details\": {\n      \"cached_tokens\":
+        0,\n      \"audio_tokens\": 0\n    },\n    \"completion_tokens_details\":
+        {\n      \"reasoning_tokens\": 0,\n      \"audio_tokens\": 0,\n      \"accepted_prediction_tokens\":
+        0,\n      \"rejected_prediction_tokens\": 0\n    }\n  },\n  \"service_tier\":
+        \"default\",\n  \"system_fingerprint\": \"fp_c4585b5b9c\"\n}\n"
+    headers:
+      CF-RAY:
+      - 9c1b75600bbd1788-WAW
+      Connection:
+      - keep-alive
+      Content-Type:
+      - application/json
+      Date:
+      - Thu, 22 Jan 2026 02:00:36 GMT
+      Server:
+      - cloudflare
+      Set-Cookie:
+      - __cf_bm=vwqcGTrWj8SGlrgQMDYYB..VYjOH0ecBI6HNeUZRgCM-1769047236-1.0.1.1-1edrcdd6xomYZ_UC1a69F3NZZREOBxneguYlZ4K1knpjWt.zXR6EA0vuriTxXsjrB7ztI9AfmybwSKchSuy8ZQZjLCythuJimr5G4qU9wtU;
+        path=/; expires=Thu, 22-Jan-26 02:30:36 GMT; domain=.api.openai.com; HttpOnly;
+        Secure; SameSite=None
+      - _cfuvid=z_m3O8zHr4Pc1gN3k1Z45A0ULYGK8UToSOaDx3xIut4-1769047236005-0.0.1.1-604800000;
+        path=/; domain=.api.openai.com; HttpOnly; Secure; SameSite=None
+      Strict-Transport-Security:
+      - max-age=31536000; includeSubDomains; preload
+      Transfer-Encoding:
+      - chunked
+      X-Content-Type-Options:
+      - nosniff
+      access-control-expose-headers:
+      - X-Request-ID
+      alt-svc:
+      - h3=":443"; ma=86400
+      cf-cache-status:
+      - DYNAMIC
+      content-length:
+      - '859'
+      openai-organization:
+      - user-h7m2t30jnyqzec1thkvt5rcd
+      openai-processing-ms:
+      - '721'
+      openai-project:
+      - proj_yBBvayevSgRR3SVjSmBgm0so
+      openai-version:
+      - '2020-10-01'
+      x-envoy-upstream-service-time:
+      - '859'
+      x-openai-proxy-wasm:
+      - v0.1
+      x-ratelimit-limit-requests:
+      - '5000'
+      x-ratelimit-limit-tokens:
+      - '4000000'
+      x-ratelimit-remaining-requests:
+      - '4999'
+      x-ratelimit-remaining-tokens:
+      - '3999993'
+      x-ratelimit-reset-requests:
+      - 12ms
+      x-ratelimit-reset-tokens:
+      - 0s
+      x-request-id:
+      - req_022c8b003c4745ce8b02529eba7dd39d
+    status:
+      code: 200
+      message: OK
+- request:
+    body: '{"model":"gpt-4o-mini","messages":[{"role":"user","content":"My name is
+      Alice."},{"role":"assistant","content":"Nice to meet you, Alice! How can I assist
+      you today?"},{"role":"user","content":"What is my name?"}],"stream":false}'
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '228'
+      Content-Type:
+      - application/json
+      Host:
+      - api.openai.com
+      User-Agent:
+      - python-httpx/0.28.1
+    method: POST
+    uri: https://api.openai.com/v1/chat/completions
+  response:
+    body:
+      string: "{\n  \"id\": \"chatcmpl-D0eHskZ170Vdv233Rkp8CjdkCXybb\",\n  \"object\":
+        \"chat.completion\",\n  \"created\": 1769047236,\n  \"model\": \"gpt-4o-mini-2024-07-18\",\n
+        \ \"choices\": [\n    {\n      \"index\": 0,\n      \"message\": {\n        \"role\":
+        \"assistant\",\n        \"content\": \"Your name is Alice.\",\n        \"refusal\":
+        null,\n        \"annotations\": []\n      },\n      \"logprobs\": null,\n
+        \     \"finish_reason\": \"stop\"\n    }\n  ],\n  \"usage\": {\n    \"prompt_tokens\":
+        39,\n    \"completion_tokens\": 5,\n    \"total_tokens\": 44,\n    \"prompt_tokens_details\":
+        {\n      \"cached_tokens\": 0,\n      \"audio_tokens\": 0\n    },\n    \"completion_tokens_details\":
+        {\n      \"reasoning_tokens\": 0,\n      \"audio_tokens\": 0,\n      \"accepted_prediction_tokens\":
+        0,\n      \"rejected_prediction_tokens\": 0\n    }\n  },\n  \"service_tier\":
+        \"default\",\n  \"system_fingerprint\": \"fp_c4585b5b9c\"\n}\n"
+    headers:
+      CF-RAY:
+      - 9c1b75694c51f56d-WAW
+      Connection:
+      - keep-alive
+      Content-Type:
+      - application/json
+      Date:
+      - Thu, 22 Jan 2026 02:00:36 GMT
+      Server:
+      - cloudflare
+      Set-Cookie:
+      - __cf_bm=q6aY.KcKMLld5Ot0yGvZIVGRj_UEh06tZcQkkJ3FXoU-1769047236-1.0.1.1-CfCySbpE7off7wQJ6c1xcBE0hGKWDi0l0.B7OqTprdI8AKf9JpwO19IfFWoY0KWXb5zy2po4p.AxF4mwOl96Rb03Via5BSOnsW9.7l.aFGQ;
+        path=/; expires=Thu, 22-Jan-26 02:30:36 GMT; domain=.api.openai.com; HttpOnly;
+        Secure; SameSite=None
+      - _cfuvid=zIa0ngTBBtXgJ64GeN7w3WAO.RmzeTW4TXPCPHdYW_Y-1769047236563-0.0.1.1-604800000;
+        path=/; domain=.api.openai.com; HttpOnly; Secure; SameSite=None
+      Strict-Transport-Security:
+      - max-age=31536000; includeSubDomains; preload
+      Transfer-Encoding:
+      - chunked
+      X-Content-Type-Options:
+      - nosniff
+      access-control-expose-headers:
+      - X-Request-ID
+      alt-svc:
+      - h3=":443"; ma=86400
+      cf-cache-status:
+      - DYNAMIC
+      content-length:
+      - '825'
+      openai-organization:
+      - user-h7m2t30jnyqzec1thkvt5rcd
+      openai-processing-ms:
+      - '348'
+      openai-project:
+      - proj_yBBvayevSgRR3SVjSmBgm0so
+      openai-version:
+      - '2020-10-01'
+      x-envoy-upstream-service-time:
+      - '366'
+      x-openai-proxy-wasm:
+      - v0.1
+      x-ratelimit-limit-requests:
+      - '5000'
+      x-ratelimit-limit-tokens:
+      - '4000000'
+      x-ratelimit-remaining-requests:
+      - '4999'
+      x-ratelimit-remaining-tokens:
+      - '3999973'
+      x-ratelimit-reset-requests:
+      - 12ms
+      x-ratelimit-reset-tokens:
+      - 0s
+      x-request-id:
+      - req_082cfc8997924eafbbc14b9c5c4ec20f
+    status:
+      code: 200
+      message: OK
+version: 1
